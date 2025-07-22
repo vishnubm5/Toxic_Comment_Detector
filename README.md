@@ -81,7 +81,7 @@ Optional arguments:
 ```
 Results
 
-
+<pre> ```bash Classification Report: precision recall f1-score support 0 0.83 0.98 0.90 832 1 0.96 0.76 0.85 833 2 0.90 0.93 0.92 833 accuracy 0.89 2498 macro avg 0.90 0.89 0.89 2498 weighted avg 0.90 0.89 0.89 2498 Confusion Matrix: [[814 11 7] [126 631 76] [ 39 18 776]] ``` </pre>
 
 
 
