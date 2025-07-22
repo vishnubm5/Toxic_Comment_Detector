@@ -20,14 +20,14 @@ Performance evaluation with classification report and confusion matrix
 Visualization of training history
 
 Repository Structure
-
+```bash
 ├── Hate_Speech.csv        # Raw dataset file (tweets and class labels)
 ├── glove.6B.100d.txt      # Pre-trained GloVe embeddings (100d)
 ├── src/                   # Python scripts
 │   └── train.py           # Main training and evaluation script
 ├── requirements.txt       # Python package dependencies
 └── README.md              # Project overview and instructions
-
+```
 Requirements
 
 Python 3.8+
@@ -35,9 +35,9 @@ Python 3.8+
 pip
 
 Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
+```
 Contents of requirements.txt:
 
 pandas
@@ -54,23 +54,23 @@ Place your Hate_Speech.csv file at the project root.
 Download and place the GloVe embeddings: glove.6B.100d.txt
 
 In a Python shell, download NLTK resources:
-
+```bash
 import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
-
+```
 Usage
 
 Navigate to the project directory:
-
+```bash
 cd path/to/project
-
+```
 Run the training script:
-
+```bash
 python src/train.py --data Hate_Speech.csv --glove glove.6B.100d.txt
-
+```
 Optional arguments:
-
+```bash
 --epochs: Number of training epochs (default: 20)
 
 --batch_size: Batch size for training (default: 32)
@@ -78,8 +78,12 @@ Optional arguments:
 --max_words: Vocabulary size (default: 5000)
 
 --max_len: Sequence length (default: 100)
-
+```
 Results
+
+
+
+
 
 After training, the script will output:
 
